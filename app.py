@@ -7,7 +7,7 @@ app = Flask(__name__)
 def home():
     student = os.environ.get("STUDENT_NAME", "невідомий студент") 
     group = os.environ.get("STUDENT_GROUP", "невідома група")
-    return f"Hello from Render! Застосунок розгорнув: {student}, група: {group}"
+    return f"Hello from Amazon EC2! Застосунок розгорнув: {student}, група: {group}"
 
 @app.route("/health")
 
